@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B3DF75713386E6C007880F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75613386E6C007880F8 /* UIKit.framework */; };
+		0B3DF75913386E6C007880F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75813386E6C007880F8 /* Foundation.framework */; };
+		0B3DF75B13386E6C007880F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75A13386E6C007880F8 /* CoreGraphics.framework */; };
+		0B3DF75D13386E6C007880F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75C13386E6C007880F8 /* CoreData.framework */; };
+		0B3DF76313386E6C007880F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF76113386E6C007880F8 /* InfoPlist.strings */; };
+		0B3DF76613386E6C007880F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DF76513386E6C007880F8 /* main.m */; };
+		0B3DF76913386E6C007880F8 /* SuperCardsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DF76813386E6C007880F8 /* SuperCardsAppDelegate.m */; };
+		0B3DF76C13386E6C007880F8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF76A13386E6C007880F8 /* MainWindow.xib */; };
+		0B3DF76F13386E6D007880F8 /* SuperCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DF76D13386E6D007880F8 /* SuperCards.xcdatamodeld */; };
+		0B3DF77613386E6D007880F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75613386E6C007880F8 /* UIKit.framework */; };
+		0B3DF77713386E6D007880F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75813386E6C007880F8 /* Foundation.framework */; };
+		0B3DF77813386E6D007880F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75A13386E6C007880F8 /* CoreGraphics.framework */; };
+		0B3DF77913386E6D007880F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3DF75C13386E6C007880F8 /* CoreData.framework */; };
+		0B3DF78113386E6D007880F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF77F13386E6D007880F8 /* InfoPlist.strings */; };
+		0B3DF78413386E6D007880F8 /* SuperCardsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF78313386E6D007880F8 /* SuperCardsTests.h */; };
+		0B3DF78613386E6D007880F8 /* SuperCardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DF78513386E6D007880F8 /* SuperCardsTests.m */; };
+		0B3DF79913386EC6007880F8 /* CardBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DF79013386EC6007880F8 /* CardBrowser.m */; };
+		0B3DF79B13386EC6007880F8 /* CardEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3DF79313386EC6007880F8 /* CardEditor.m */; };
+		0B3DF7A51338701C007880F8 /* frostedglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7A21338701C007880F8 /* frostedglass.png */; };
+		0B3DF7A61338701C007880F8 /* header_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7A31338701C007880F8 /* header_bg.png */; };
+		0B3DF7A813387023007880F8 /* LeatherBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7A713387023007880F8 /* LeatherBG.png */; };
+		0B3DF7AB1338702B007880F8 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7A91338702B007880F8 /* splash.png */; };
+		0B3DF7AC1338702B007880F8 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7AA1338702B007880F8 /* wood.png */; };
+		0B3DF7AE1338714C007880F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7AD1338714B007880F8 /* Default@2x.png */; };
+		0B3DF7B013387158007880F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B3DF7AF13387158007880F8 /* Default.png */; };
+		0B43ECCB1378CE7C00C000BD /* Cards.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B43ECCA1378CE7C00C000BD /* Cards.m */; };
+		0B43ECCE1378CEB900C000BD /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B43ECCD1378CEB900C000BD /* Category.m */; };
+		0B471B301370D52200772916 /* cardCell320x250.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B471B2F1370D52200772916 /* cardCell320x250.png */; };
+		0B4EA0C91347D6650046BE0F /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EA0C01347D6640046BE0F /* NSObject+SBJSON.m */; };
+		0B4EA0CA1347D6650046BE0F /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EA0C21347D6640046BE0F /* NSString+SBJSON.m */; };
+		0B4EA0CB1347D6650046BE0F /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EA0C41347D6640046BE0F /* SBJsonBase.m */; };
+		0B4EA0CC1347D6650046BE0F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EA0C61347D6640046BE0F /* SBJsonParser.m */; };
+		0B4EA0CD1347D6650046BE0F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EA0C81347D6650046BE0F /* SBJsonWriter.m */; };
+		0B4EA0D61347D8FD0046BE0F /* jsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4EA0D51347D8F80046BE0F /* jsonHelper.m */; };
+		0B54C26014962E3900434BFA /* CardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B54C25F14962E3900434BFA /* CardTableViewCell.m */; };
+		0BB977D614961803006C2A99 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB977D514961803006C2A99 /* CardCell.m */; };
+		0BD7455F134EEF3D00C29232 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7455E134EEF3D00C29232 /* CardTableViewCell.xib */; };
+		0BD978B6134E04FE00AD8825 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD978B5134E04FE00AD8825 /* CoreDataTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B3DF77A13386E6D007880F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B3DF74913386E6C007880F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B3DF75113386E6C007880F8;
+			remoteInfo = SuperCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B3DF75213386E6C007880F8 /* SuperCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3DF75613386E6C007880F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B3DF75813386E6C007880F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B3DF75A13386E6C007880F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B3DF75C13386E6C007880F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0B3DF76013386E6C007880F8 /* SuperCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperCards-Info.plist"; sourceTree = "<group>"; };
+		0B3DF76213386E6C007880F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B3DF76413386E6C007880F8 /* SuperCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperCards-Prefix.pch"; sourceTree = "<group>"; };
+		0B3DF76513386E6C007880F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B3DF76713386E6C007880F8 /* SuperCardsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCardsAppDelegate.h; sourceTree = "<group>"; };
+		0B3DF76813386E6C007880F8 /* SuperCardsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardsAppDelegate.m; sourceTree = "<group>"; };
+		0B3DF76B13386E6C007880F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0B3DF76E13386E6D007880F8 /* SuperCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperCards.xcdatamodel; sourceTree = "<group>"; };
+		0B3DF77513386E6D007880F8 /* SuperCardsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperCardsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3DF77E13386E6D007880F8 /* SuperCardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperCardsTests-Info.plist"; sourceTree = "<group>"; };
+		0B3DF78013386E6D007880F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B3DF78213386E6D007880F8 /* SuperCardsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperCardsTests-Prefix.pch"; sourceTree = "<group>"; };
+		0B3DF78313386E6D007880F8 /* SuperCardsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCardsTests.h; sourceTree = "<group>"; };
+		0B3DF78513386E6D007880F8 /* SuperCardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardsTests.m; sourceTree = "<group>"; };
+		0B3DF78F13386EC6007880F8 /* CardBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardBrowser.h; sourceTree = "<group>"; };
+		0B3DF79013386EC6007880F8 /* CardBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardBrowser.m; sourceTree = "<group>"; };
+		0B3DF79213386EC6007880F8 /* CardEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardEditor.h; sourceTree = "<group>"; };
+		0B3DF79313386EC6007880F8 /* CardEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardEditor.m; sourceTree = "<group>"; };
+		0B3DF7A21338701C007880F8 /* frostedglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frostedglass.png; sourceTree = "<group>"; };
+		0B3DF7A31338701C007880F8 /* header_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_bg.png; sourceTree = "<group>"; };
+		0B3DF7A713387023007880F8 /* LeatherBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeatherBG.png; sourceTree = "<group>"; };
+		0B3DF7A91338702B007880F8 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		0B3DF7AA1338702B007880F8 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
+		0B3DF7AD1338714B007880F8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		0B3DF7AF13387158007880F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		0B43ECC91378CE7C00C000BD /* Cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cards.h; path = ../Cards.h; sourceTree = "<group>"; };
+		0B43ECCA1378CE7C00C000BD /* Cards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cards.m; path = ../Cards.m; sourceTree = "<group>"; };
+		0B43ECCC1378CEB900C000BD /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		0B43ECCD1378CEB900C000BD /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		0B471B2F1370D52200772916 /* cardCell320x250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardCell320x250.png; sourceTree = "<group>"; };
+		0B4EA0BE1347D6640046BE0F /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		0B4EA0BF1347D6640046BE0F /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		0B4EA0C01347D6640046BE0F /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		0B4EA0C11347D6640046BE0F /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		0B4EA0C21347D6640046BE0F /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		0B4EA0C31347D6640046BE0F /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		0B4EA0C41347D6640046BE0F /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		0B4EA0C51347D6640046BE0F /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		0B4EA0C61347D6640046BE0F /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		0B4EA0C71347D6650046BE0F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		0B4EA0C81347D6650046BE0F /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		0B4EA0D41347D8F80046BE0F /* jsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonHelper.h; sourceTree = "<group>"; };
+		0B4EA0D51347D8F80046BE0F /* jsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonHelper.m; sourceTree = "<group>"; };
+		0B54C25E14962E3900434BFA /* CardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTableViewCell.h; sourceTree = "<group>"; };
+		0B54C25F14962E3900434BFA /* CardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTableViewCell.m; sourceTree = "<group>"; };
+		0BB977D414961803006C2A99 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
+		0BB977D514961803006C2A99 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
+		0BD7455E134EEF3D00C29232 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		0BD978B4134E04FE00AD8825 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		0BD978B5134E04FE00AD8825 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B3DF74F13386E6C007880F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3DF75713386E6C007880F8 /* UIKit.framework in Frameworks */,
+				0B3DF75913386E6C007880F8 /* Foundation.framework in Frameworks */,
+				0B3DF75B13386E6C007880F8 /* CoreGraphics.framework in Frameworks */,
+				0B3DF75D13386E6C007880F8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B3DF77113386E6D007880F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3DF77613386E6D007880F8 /* UIKit.framework in Frameworks */,
+				0B3DF77713386E6D007880F8 /* Foundation.framework in Frameworks */,
+				0B3DF77813386E6D007880F8 /* CoreGraphics.framework in Frameworks */,
+				0B3DF77913386E6D007880F8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B3DF74713386E6C007880F8 = {
+			isa = PBXGroup;
+			children = (
+				0B3DF75E13386E6C007880F8 /* SuperCards */,
+				0B3DF77C13386E6D007880F8 /* SuperCardsTests */,
+				0B3DF75513386E6C007880F8 /* Frameworks */,
+				0B3DF75313386E6C007880F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B3DF75313386E6C007880F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF75213386E6C007880F8 /* SuperCards.app */,
+				0B3DF77513386E6D007880F8 /* SuperCardsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B3DF75513386E6C007880F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF75613386E6C007880F8 /* UIKit.framework */,
+				0B3DF75813386E6C007880F8 /* Foundation.framework */,
+				0B3DF75A13386E6C007880F8 /* CoreGraphics.framework */,
+				0B3DF75C13386E6C007880F8 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B3DF75E13386E6C007880F8 /* SuperCards */ = {
+			isa = PBXGroup;
+			children = (
+				0B4EA0BC1347D6540046BE0F /* json */,
+				0B92C5BA133951CA00B1665B /* Model */,
+				0B3DF79F13386ECE007880F8 /* Views */,
+				0B4EA0D41347D8F80046BE0F /* jsonHelper.h */,
+				0B4EA0D51347D8F80046BE0F /* jsonHelper.m */,
+				0B3DF76713386E6C007880F8 /* SuperCardsAppDelegate.h */,
+				0B3DF76813386E6C007880F8 /* SuperCardsAppDelegate.m */,
+				0BD978B4134E04FE00AD8825 /* CoreDataTableViewController.h */,
+				0BD978B5134E04FE00AD8825 /* CoreDataTableViewController.m */,
+				0B3DF76A13386E6C007880F8 /* MainWindow.xib */,
+				0B3DF7A013387000007880F8 /* Resources */,
+				0B3DF75F13386E6C007880F8 /* Supporting Files */,
+			);
+			path = SuperCards;
+			sourceTree = "<group>";
+		};
+		0B3DF75F13386E6C007880F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF76013386E6C007880F8 /* SuperCards-Info.plist */,
+				0B3DF76113386E6C007880F8 /* InfoPlist.strings */,
+				0B3DF76413386E6C007880F8 /* SuperCards-Prefix.pch */,
+				0B3DF76513386E6C007880F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B3DF77C13386E6D007880F8 /* SuperCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF78313386E6D007880F8 /* SuperCardsTests.h */,
+				0B3DF78513386E6D007880F8 /* SuperCardsTests.m */,
+				0B3DF77D13386E6D007880F8 /* Supporting Files */,
+			);
+			path = SuperCardsTests;
+			sourceTree = "<group>";
+		};
+		0B3DF77D13386E6D007880F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF77E13386E6D007880F8 /* SuperCardsTests-Info.plist */,
+				0B3DF77F13386E6D007880F8 /* InfoPlist.strings */,
+				0B3DF78213386E6D007880F8 /* SuperCardsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B3DF79F13386ECE007880F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BB977D3149617CC006C2A99 /* CardCells */,
+				0B3DF78F13386EC6007880F8 /* CardBrowser.h */,
+				0B3DF79013386EC6007880F8 /* CardBrowser.m */,
+				0B3DF79213386EC6007880F8 /* CardEditor.h */,
+				0B3DF79313386EC6007880F8 /* CardEditor.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0B3DF7A013387000007880F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF7AF13387158007880F8 /* Default.png */,
+				0B3DF7AD1338714B007880F8 /* Default@2x.png */,
+				0B471B2F1370D52200772916 /* cardCell320x250.png */,
+				0B3DF7A91338702B007880F8 /* splash.png */,
+				0B3DF7AA1338702B007880F8 /* wood.png */,
+				0B3DF7A713387023007880F8 /* LeatherBG.png */,
+				0B3DF7A21338701C007880F8 /* frostedglass.png */,
+				0B3DF7A31338701C007880F8 /* header_bg.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0B4EA0BC1347D6540046BE0F /* json */ = {
+			isa = PBXGroup;
+			children = (
+				0B4EA0BE1347D6640046BE0F /* JSON.h */,
+				0B4EA0BF1347D6640046BE0F /* NSObject+SBJSON.h */,
+				0B4EA0C01347D6640046BE0F /* NSObject+SBJSON.m */,
+				0B4EA0C11347D6640046BE0F /* NSString+SBJSON.h */,
+				0B4EA0C21347D6640046BE0F /* NSString+SBJSON.m */,
+				0B4EA0C31347D6640046BE0F /* SBJsonBase.h */,
+				0B4EA0C41347D6640046BE0F /* SBJsonBase.m */,
+				0B4EA0C51347D6640046BE0F /* SBJsonParser.h */,
+				0B4EA0C61347D6640046BE0F /* SBJsonParser.m */,
+				0B4EA0C71347D6650046BE0F /* SBJsonWriter.h */,
+				0B4EA0C81347D6650046BE0F /* SBJsonWriter.m */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		0B92C5BA133951CA00B1665B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B3DF76D13386E6D007880F8 /* SuperCards.xcdatamodeld */,
+				0B43ECC91378CE7C00C000BD /* Cards.h */,
+				0B43ECCA1378CE7C00C000BD /* Cards.m */,
+				0B43ECCC1378CEB900C000BD /* Category.h */,
+				0B43ECCD1378CEB900C000BD /* Category.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0BB977D3149617CC006C2A99 /* CardCells */ = {
+			isa = PBXGroup;
+			children = (
+				0BB977D414961803006C2A99 /* CardCell.h */,
+				0BB977D514961803006C2A99 /* CardCell.m */,
+				0B54C25E14962E3900434BFA /* CardTableViewCell.h */,
+				0B54C25F14962E3900434BFA /* CardTableViewCell.m */,
+				0BD7455E134EEF3D00C29232 /* CardTableViewCell.xib */,
+			);
+			name = CardCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B3DF75113386E6C007880F8 /* SuperCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B3DF78913386E6D007880F8 /* Build configuration list for PBXNativeTarget "SuperCards" */;
+			buildPhases = (
+				0B3DF74E13386E6C007880F8 /* Sources */,
+				0B3DF74F13386E6C007880F8 /* Frameworks */,
+				0B3DF75013386E6C007880F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperCards;
+			productName = SuperCards;
+			productReference = 0B3DF75213386E6C007880F8 /* SuperCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B3DF77413386E6D007880F8 /* SuperCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B3DF78C13386E6D007880F8 /* Build configuration list for PBXNativeTarget "SuperCardsTests" */;
+			buildPhases = (
+				0B3DF77013386E6D007880F8 /* Sources */,
+				0B3DF77113386E6D007880F8 /* Frameworks */,
+				0B3DF77213386E6D007880F8 /* Resources */,
+				0B3DF77313386E6D007880F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B3DF77B13386E6D007880F8 /* PBXTargetDependency */,
+			);
+			name = SuperCardsTests;
+			productName = SuperCardsTests;
+			productReference = 0B3DF77513386E6D007880F8 /* SuperCardsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B3DF74913386E6C007880F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Adventesia LLC.";
+			};
+			buildConfigurationList = 0B3DF74C13386E6C007880F8 /* Build configuration list for PBXProject "SuperCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B3DF74713386E6C007880F8;
+			productRefGroup = 0B3DF75313386E6C007880F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B3DF75113386E6C007880F8 /* SuperCards */,
+				0B3DF77413386E6D007880F8 /* SuperCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B3DF75013386E6C007880F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3DF76313386E6C007880F8 /* InfoPlist.strings in Resources */,
+				0B3DF76C13386E6C007880F8 /* MainWindow.xib in Resources */,
+				0B3DF7A51338701C007880F8 /* frostedglass.png in Resources */,
+				0B3DF7A61338701C007880F8 /* header_bg.png in Resources */,
+				0B3DF7A813387023007880F8 /* LeatherBG.png in Resources */,
+				0B3DF7AB1338702B007880F8 /* splash.png in Resources */,
+				0B3DF7AC1338702B007880F8 /* wood.png in Resources */,
+				0B3DF7AE1338714C007880F8 /* Default@2x.png in Resources */,
+				0B3DF7B013387158007880F8 /* Default.png in Resources */,
+				0BD7455F134EEF3D00C29232 /* CardTableViewCell.xib in Resources */,
+				0B471B301370D52200772916 /* cardCell320x250.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B3DF77213386E6D007880F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3DF78113386E6D007880F8 /* InfoPlist.strings in Resources */,
+				0B3DF78413386E6D007880F8 /* SuperCardsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3DF77313386E6D007880F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B3DF74E13386E6C007880F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3DF76613386E6C007880F8 /* main.m in Sources */,
+				0B3DF76913386E6C007880F8 /* SuperCardsAppDelegate.m in Sources */,
+				0B3DF76F13386E6D007880F8 /* SuperCards.xcdatamodeld in Sources */,
+				0B3DF79913386EC6007880F8 /* CardBrowser.m in Sources */,
+				0B3DF79B13386EC6007880F8 /* CardEditor.m in Sources */,
+				0B4EA0C91347D6650046BE0F /* NSObject+SBJSON.m in Sources */,
+				0B4EA0CA1347D6650046BE0F /* NSString+SBJSON.m in Sources */,
+				0B4EA0CB1347D6650046BE0F /* SBJsonBase.m in Sources */,
+				0B4EA0CC1347D6650046BE0F /* SBJsonParser.m in Sources */,
+				0B4EA0CD1347D6650046BE0F /* SBJsonWriter.m in Sources */,
+				0B4EA0D61347D8FD0046BE0F /* jsonHelper.m in Sources */,
+				0BD978B6134E04FE00AD8825 /* CoreDataTableViewController.m in Sources */,
+				0B43ECCB1378CE7C00C000BD /* Cards.m in Sources */,
+				0B43ECCE1378CEB900C000BD /* Category.m in Sources */,
+				0BB977D614961803006C2A99 /* CardCell.m in Sources */,
+				0B54C26014962E3900434BFA /* CardTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B3DF77013386E6D007880F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3DF78613386E6D007880F8 /* SuperCardsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B3DF77B13386E6D007880F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B3DF75113386E6C007880F8 /* SuperCards */;
+			targetProxy = 0B3DF77A13386E6D007880F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B3DF76113386E6C007880F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B3DF76213386E6C007880F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B3DF76A13386E6C007880F8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B3DF76B13386E6C007880F8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		0B3DF77F13386E6D007880F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B3DF78013386E6D007880F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B3DF78713386E6D007880F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0B3DF78813386E6D007880F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0B3DF78A13386E6D007880F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperCards/SuperCards-Prefix.pch";
+				INFOPLIST_FILE = "SuperCards/SuperCards-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.3;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0B3DF78B13386E6D007880F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperCards/SuperCards-Prefix.pch";
+				INFOPLIST_FILE = "SuperCards/SuperCards-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos4.3;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0B3DF78D13386E6D007880F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SuperCards.app/SuperCards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperCardsTests/SuperCardsTests-Prefix.pch";
+				INFOPLIST_FILE = "SuperCardsTests/SuperCardsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0B3DF78E13386E6D007880F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SuperCards.app/SuperCards";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperCardsTests/SuperCardsTests-Prefix.pch";
+				INFOPLIST_FILE = "SuperCardsTests/SuperCardsTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B3DF74C13386E6C007880F8 /* Build configuration list for PBXProject "SuperCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3DF78713386E6D007880F8 /* Debug */,
+				0B3DF78813386E6D007880F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B3DF78913386E6D007880F8 /* Build configuration list for PBXNativeTarget "SuperCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3DF78A13386E6D007880F8 /* Debug */,
+				0B3DF78B13386E6D007880F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B3DF78C13386E6D007880F8 /* Build configuration list for PBXNativeTarget "SuperCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3DF78D13386E6D007880F8 /* Debug */,
+				0B3DF78E13386E6D007880F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B3DF76D13386E6D007880F8 /* SuperCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B3DF76E13386E6D007880F8 /* SuperCards.xcdatamodel */,
+			);
+			currentVersion = 0B3DF76E13386E6D007880F8 /* SuperCards.xcdatamodel */;
+			path = SuperCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0B3DF74913386E6C007880F8 /* Project object */;
+}

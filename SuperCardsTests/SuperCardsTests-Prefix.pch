@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SuperCardsTests' target in the 'SuperCardsTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
